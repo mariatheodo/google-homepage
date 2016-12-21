@@ -1,4 +1,4 @@
-* {border: 1px solid green;}
+ * {border: 1px solid green;} 
 
 li {
 	display: inline;
@@ -23,26 +23,100 @@ body {
 	font-family: Arial, sans-serif;
 	color: black;
 	margin: 0;
+	width: 100%;
 }
 
 .navbar {
 	font-size: 13px;
 	position: relative;
 	left: 70%;
+	margin-top: 20px;
 }
 
 .navigation {
 	float: left;
+	margin-top: 3px;
 }
 
 .options {
 	float: left;
-	width: 20px;
-	height: 20px;
+	width: 30px;
+	height: 30px;
 	background-image: url(../img/resources.png);
+	background-position: -130px -38px;
+	margin-left: 20px;
+	position: relative;
+	top: -5px;
 }
 
 .signin {
 	display: inline;
-	margin: 13px 0;
+	margin: 13px 2px 13px 10px;
+	background-color: #4285f4;
+	border: 1px solid #4285f4;
+	border-radius: 3px;
+	padding: 5px 10px;
+}
+
+.signin strong {
+	color: white;
+}
+
+.google {
+	height: 215px;
+	width: 546px;
+	margin: auto;
+	margin-top: 50px;
+}
+
+.google a {
+	height: 215px;
+	width: 546px;
+}
+
+.search {
+	width: 480px;
+	margin: auto;
+	height: 45px;
+	border: 1px solid #dddddd;
+	margin-top: 20px;
+	border-radius: 3px;
+	box-shadow: 1px 2px 2px #e4e4e4;
+}
+
+.search:hover {
+	box-shadow: 1px 3px 2px #e4e4e4;
+}
+
+form input {
+	display: inline;
+	float: left;
+	width: 400px;
+	height: 30px;
+	float: left;
+	border: none;
+	margin-left: 15px;
+	position: relative;
+	top: 8px;
+}
+
+form input:focus {
+	outline: none;
+}
+
+.search a {
+	float: right;
+	background-image: url(../img/microphone.png);
+	width: 50px;
+	height: 30px;
+	display: inline;
+	background-size: 24px 24px;
+	background-repeat: no-repeat;
+	position: relative;
+	bottom: 5px;
+	right: 10px;
+}
+
+.write {
+	height: 20px;
 }
