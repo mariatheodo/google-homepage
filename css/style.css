@@ -1,4 +1,8 @@
- * {border: 1px solid green;} 
+/* * {border: 1px solid green;}  */
+
+html {
+	width: 95%;
+}
 
 li {
 	display: inline;
@@ -23,14 +27,15 @@ body {
 	font-family: Arial, sans-serif;
 	color: black;
 	margin: 0;
-	width: 100%;
+	width: 105%;
 }
 
 .navbar {
+	width: 29%;
 	font-size: 13px;
+	float: right;
+	top: -25px;
 	position: relative;
-	left: 70%;
-	margin-top: 20px;
 }
 
 .navigation {
@@ -43,10 +48,15 @@ body {
 	width: 30px;
 	height: 30px;
 	background-image: url(../img/resources.png);
-	background-position: -130px -38px;
+	background-position: -132px -38px;
 	margin-left: 20px;
 	position: relative;
 	top: -5px;
+}
+
+.options img {
+	width: 24px;
+	height: 24px;
 }
 
 .signin {
@@ -56,6 +66,11 @@ body {
 	border: 1px solid #4285f4;
 	border-radius: 3px;
 	padding: 5px 10px;
+	cursor: default;
+}
+
+.signin:focus {
+	background-color: #060009;
 }
 
 .signin strong {
@@ -79,7 +94,7 @@ body {
 	margin: auto;
 	height: 45px;
 	border: 1px solid #dddddd;
-	margin-top: 20px;
+	margin-top: 40px;
 	border-radius: 3px;
 	box-shadow: 1px 2px 2px #e4e4e4;
 }
@@ -114,9 +129,87 @@ form input:focus {
 	background-repeat: no-repeat;
 	position: relative;
 	bottom: 5px;
-	right: 10px;
+	right: -15px;
 }
 
 .write {
 	height: 20px;
+}
+
+.buttons {
+	width: 30%;
+	margin: 30px auto;
+	clear: both;
+}
+
+.press, .lucky {
+	background-color: #f1f1f1;
+	font-size: 13px;
+	width: 38%;
+	margin: auto;
+	padding: 0 10px;
+}
+
+.press {
+	float: left;
+}
+
+.lucky {
+	float: right;
+}
+
+.press:hover, .lucky:hover {
+	border: 1px solid #dddddd;
+	border-radius: 3px;
+	cursor: default;
+}
+
+.press p:hover, .lucky p:hover {
+	color: #343434;
+}
+
+.press p, .lucky p {
+	font-weight: bold;
+	color: #606060;
+	text-align: center;
+}
+
+.footer {
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	background-color: #f2f2f2;
+}
+
+.first_footer {
+	float: left;
+}
+
+.last_footer {
+	float: right;
+	position: fixed;
+	right: 0;
+}
+
+.footer a {
+	font-size: 13px;
+	color: #626262;
+	text-decoration: none;
+	line-height: 40px;
+}
+
+.footer a:hover {
+	text-decoration: underline;
+}
+
+.first_footer, .last_footer {
+	margin: auto 0 auto 0;
+}
+
+.footer li {
+	padding-right: 20px;
+}
+
+#begin {
+	padding-left: 0;
 }
